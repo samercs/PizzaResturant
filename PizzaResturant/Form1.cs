@@ -38,8 +38,8 @@ namespace PizzaResturant
                 ZipCode = textBox10.Text
             };
 
-            Program.FormData.Person = person;
-            Program.FormData.Address = address;
+            Program.FormData.Order.Person = person;
+            Program.FormData.Order.Address = address;
             var foodSelection = new Form2();
             foodSelection.Show();
             this.Hide();

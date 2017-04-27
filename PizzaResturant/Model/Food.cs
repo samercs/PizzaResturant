@@ -2,7 +2,6 @@
 {
     public class Food
     {
-        public int FoodId { get; set; }
         public decimal Prices { get; set; }
         public FoodType FoodType { get; set; }
     }
@@ -12,5 +11,12 @@
         Pizza,
         Beverage,
         Dessert
+    }
+
+    public enum Size
+    {
+        Large = 3,
+        Meduim = 2,
+        Small = 1
     }
 }

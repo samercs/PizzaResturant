@@ -8,7 +8,6 @@ namespace PizzaResturant.Model
 {
     public class FormData
     {
-        public Address Address { get; set; }
-        public Person Person { get; set; }
+        public Order Order { get; set; }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace PizzaResturant
+﻿using System.ComponentModel;
+
+namespace PizzaResturant
 {
     partial class Form1
     {
@@ -310,6 +312,8 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer Information";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Closing += new CancelEventHandler(this.Form_Closing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,4 +1,6 @@
-﻿namespace PizzaResturant
+﻿using System.ComponentModel;
+
+namespace PizzaResturant
 {
     partial class Form2
     {
@@ -322,6 +324,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
+            this.Closing += new CancelEventHandler(this.Form_Closing);
 
         }
 

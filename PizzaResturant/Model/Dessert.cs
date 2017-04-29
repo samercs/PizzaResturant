@@ -2,7 +2,6 @@
 {
     public class Dessert : Food
     {
-        public int DessertId { get; set; }
         public string Type { get; set; }
         public string Size { get; set; }
         public Dessert()

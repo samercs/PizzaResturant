@@ -20,14 +20,16 @@ namespace PizzaResturant
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var person = new Person()
+            Program.FormData = new FormData();
+            Program.FormData.Order = new Order();
+            Program.FormData.Order.Person = new Person()
             {
                 FName = textBox1.Text,
                 Title = comboBox1.Text,
                 LName = textBox2.Text,
                 PhoneNumber = textBox3.Text
             };
-            var address = new Address
+            Program.FormData.Order.Address = new Address
             {
                 Country = textBox4.Text,
                 Area = textBox5.Text,
@@ -37,12 +39,21 @@ namespace PizzaResturant
                 Street = textBox9.Text,
                 ZipCode = textBox10.Text
             };
-
-            Program.FormData.Order.Person = person;
-            Program.FormData.Order.Address = address;
             var foodSelection = new Form2();
             foodSelection.Show();
             this.Hide();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form_Closing(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+
     }
 }

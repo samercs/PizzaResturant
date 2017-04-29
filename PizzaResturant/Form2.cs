@@ -48,7 +48,16 @@ namespace PizzaResturant
             Program.FormData.Order.Dessert = dessert;
             Program.FormData.Order.Beverage = beverage;
 
+            var payment = new Form3();
+            payment.Show();
+            this.Hide();
 
+
+        }
+
+        private void Form_Closing(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
